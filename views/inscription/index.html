@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobBoard</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="filter"></div>
+    <nav class="nav">
+        <ul>
+            <li class="active">
+                <a href="/">publications</a>
+            </li>
+            <li>
+                <a href="/views/companies/">Entreprises</a>
+            </li>
+            <li>
+                <a id="logout" href="/views/inscription/?signup=true">Inscription</a>
+            </li>
+        </ul>
+        <label class="nav_button mobile-nav" for="nav_button_cb">
+            <input class="nav_button_cb" type="checkbox" id="nav_button_cb">
+
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="top" d="M4 6L20 6" stroke-width="2" stroke-linecap="round" />
+                <path class="middle_left" d="M4 12L20 12" stroke-width="2" stroke-linecap="round" />
+                <path class="middle_right" d="M4 12L20 12" stroke-width="2" stroke-linecap="round" />
+                <path class="bottom" d="M4 18L20 18" stroke-width="2" stroke-linecap="round" />
+            </svg>
+
+        </label>
+    </nav>
+
+    <header>
+            <a href="/" class="logo">
+                <img src="/Votre texte de paragraphe.png">
+                <!-- <p>My JobBoard and Co</p> -->
+            </a>
+            <a id="admin" class="butt_connexion" href="/views/admin/">admin</a>
+    <div class="desktop-nav">
+        <a class="butt_connexion" href="/views/inscription/">Connexion</a>
+
+        <a class="butt_connexion logout" href="/views/inscription/?signup=true">Inscription</a>
+
+
+        <a class="butt_connexion" href="/">publications</a>
+
+        <a class="butt_connexion"  href="/views/companies/">Entreprises</a>
+    </div>
+
+ 
+    </header>
+
+    <section class="input_content">
+        <section class="container forms">
+            <div class="form login">
+                <div class="form-content">
+                    <header class="header">Login</header>
+                    <form id="login" action="#">
+                        <div class="field input-field">
+                            <input name="mail" type="email" placeholder="Email" class="input">
+                        </div>
+
+                        <div class="field input-field">
+                            <input name="password" type="password" placeholder="Password" class="password">
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+
+                        <div class="form-link">
+                            <a href="#" class="forgot-pass">Forgot password?</a>
+                        </div>
+
+                        <div class="field button-field">
+                            <button>Login</button>
+                        </div>
+                    </form>
+
+                    <div class="form-link">
+                        <span>Don't have an account? <a href="#" class="link signup-link">Signup</a></span>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="media-options">
+                    <a href="#" class="field facebook">
+
+                        <img src="image/icons8-facebook-nouveau.svg" width="10%"  height="50%" alt="">
+
+                        <span>Login with Facebook</span>
+                    </a>
+                </div>
+
+                <div class="media-options">
+                    <a href="#" class="field google">
+
+                        <img src="image/icons8-google.svg" width="10%"  height="50%" alt="">
+
+                        <span>Login with Google</span>
+                    </a>
+                </div>
+
+            </div>
+
+            <!-- Signup Form -->
+
+            <div class="form signup">
+                <div class="form-content">
+                    <header class="header">Signup</header>
+                    <form id="signup" action="#">
+                        <div class="field input-field">
+                            <input name="name" type="text" placeholder="Name" class="input">
+                        </div>
+
+                        <div class="field input-field">
+                            <input name="mail" type="email" placeholder="Email" class="input">
+                        </div>
+
+                        <div class="field input-field">
+                            <input name="password" type="password" placeholder="Create password" class="password">
+                        </div>
+
+                        <div class="field input-field">
+                            <input name="verif_password" type="password" placeholder="Confirm password"
+                                class="password">
+                            <i class='bx bx-hide eye-icon'></i>
+                        </div>
+
+                        <div class="field button-field">
+                            <button>Signup</button>
+                        </div>
+                    </form>
+
+                    <div class="form-link">
+                        <span>Already have an account? <a href="#" class="link login-link">Login</a></span>
+                    </div>
+                </div>
+
+                <div class="line"></div>
+
+                <div class="media-options">
+                    <a href="#" class="field facebook">
+
+                        <img src="image/icons8-facebook-nouveau.svg" width="10%"  height="50%" alt="">
+
+                        <span>Login with Facebook</span>
+                    </a>
+                </div>
+
+                <div class="media-options">
+                    <a href="#" class="field google">
+                        <img src="image/icons8-google.svg" width="10%"  height="50%" alt="">
+                        <span>Login with Google</span>
+                    </a>
+                </div>
+
+            </div>
+        </section>
+    </section>
+
+
+
+    <script src="script.js"></script>
+    <script src="script_api.js"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>

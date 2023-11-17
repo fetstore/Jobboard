@@ -1,0 +1,13 @@
+h3{
+    display: flex;
+    justify-content: center;
+}
+.contain_advertissement{
+display: flex;
+justify-content: center;
+}
+
+/* met une majuscule aux premier mot*/
+#ville, #poste {
+    text-transform: capitalize;
+}

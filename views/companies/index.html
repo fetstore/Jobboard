@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobBoard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div id="filter"></div>
+    <nav class="nav">
+        <ul>
+            <li class="active">
+                <a href="/">publications</a>
+            </li>
+            <li>
+                <a href="/views/companies/">Entreprises</a>
+            </li>
+            <li>
+                <a class="logout" href="/views/inscription/?signup=true">Inscription</a>
+            </li>
+        </ul>
+        <label class="nav_button mobile-nav" for="nav_button_cb">
+            <input class="nav_button_cb" type="checkbox" id="nav_button_cb">
+
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="top" d="M4 6L20 6" stroke-width="2" stroke-linecap="round" />
+                <path class="middle_left" d="M4 12L20 12" stroke-width="2" stroke-linecap="round" />
+                <path class="middle_right" d="M4 12L20 12" stroke-width="2" stroke-linecap="round" />
+                <path class="bottom" d="M4 18L20 18" stroke-width="2" stroke-linecap="round" />
+            </svg>
+
+        </label>
+    </nav>
+
+    <header>
+            <a href="/" class="logo">
+                <img src="/Votre texte de paragraphe.png">
+            </a>
+            <a id="connexion" class="butt_connexion" href="/views/inscription/">Connexion</a>
+            <a id="admin" class="butt_connexion" href="/views/admin/">admin</a>
+
+    <div class="desktop-nav">
+
+        <a class="butt_connexion logout" href="/views/inscription/?signup=true">Inscription</a>
+
+
+        <a class="butt_connexion" href="/">publications</a>
+
+        <a class="butt_connexion"  href="/views/companies/">Entreprises</a>
+    </div>
+
+ 
+    </header>
+
+
+    <section class="container">
+        <h3>Nos Entreprises</h3>
+        <div class="contain_companies" >
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Entreprise</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody id="companies_container">
+                </tbody>
+            </table>
+            </table>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+    <script src="/script.js"></script>
+</body>
+
+</html>

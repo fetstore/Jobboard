@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JobBoard</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="filter"></div>
+    <nav class="nav">
+        <ul>
+            <li class="active">
+                <a href="/">publications</a>
+            </li>
+            <li>
+                <a href="/views/companies/">Entreprises</a>
+            </li>
+            <li>
+                <a class="logout" href="/views/inscription/?signup=true">Inscription</a>
+            </li>
+        </ul>
+        <label class="nav_button mobile-nav" for="nav_button_cb">
+            <input class="nav_button_cb" type="checkbox" id="nav_button_cb">
+
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="top" d="M4 6L20 6" stroke-width="2" stroke-linecap="round" />
+                <path class="middle_left" d="M4 12L20 12" stroke-width="2" stroke-linecap="round" />
+                <path class="middle_right" d="M4 12L20 12" stroke-width="2" stroke-linecap="round" />
+                <path class="bottom" d="M4 18L20 18" stroke-width="2" stroke-linecap="round" />
+            </svg>
+
+        </label>
+    </nav>
+
+    <header>
+            <a href="/" class="logo">
+                <img src="/Votre texte de paragraphe.png">
+            </a>
+            <a id="connexion" class="butt_connexion" href="/views/inscription/">Connexion</a>
+            <a id="admin" class="butt_connexion" href="/views/admin/">admin</a>
+
+    <div class="desktop-nav">
+
+        <a class="butt_connexion logout" href="/views/inscription/?signup=true">Inscription</a>
+
+        <a class="butt_connexion" href="/">publications</a>
+
+        <a class="butt_connexion"  href="/views/companies/">Entreprises</a>
+    </div>
+
+ 
+    </header>
+
+    <section id="input_content" class="input_content none">
+        <H3>Mon Profil</H3>
+        <section>
+            <div class="form_content none">
+                <form id="form_edit">
+                    <svg id="back" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M4 10L3.29289 10.7071L2.58579 10L3.29289 9.29289L4 10ZM21 18C21 18.5523 20.5523 19 20 19C19.4477 19 19 18.5523 19 18L21 18ZM8.29289 15.7071L3.29289 10.7071L4.70711 9.29289L9.70711 14.2929L8.29289 15.7071ZM3.29289 9.29289L8.29289 4.29289L9.70711 5.70711L4.70711 10.7071L3.29289 9.29289ZM4 9L14 9L14 11L4 11L4 9ZM21 16L21 18L19 18L19 16L21 16ZM14 9C17.866 9 21 12.134 21 16L19 16C19 13.2386 16.7614 11 14 11L14 9Z"
+                            fill="#000000" />
+                    </svg>
+                    <div class="field input-field">
+                        <label for="">Nom</label>
+                        <input name="name" type="text" placeholder="Nom" class="input">
+                    </div>
+
+                    <div class="field input-field">
+                        <label for="">Prénom</label>
+                        <input name="surname" type="text" placeholder="Prénom" class="input">
+                    </div>
+
+                    <div class="field input-field">
+                        <label for="">Email</label>
+                        <input name="mail" type="email" placeholder="Email" class="input">
+                    </div>
+
+                    <div class="field input-field">
+                        <label for="">Téléphone</label>
+                        <input name="phone" type="tel" maxlength="10" placeholder="Téléphone" class="input">
+                    </div>
+
+                    <p> Changer de Mot de passe </p>
+
+                    <div class="field input-field">
+                        <label for="">Mot de passe actuel</label>
+                        <input name="old_password" type="password" placeholder="Create password" class="password">
+                    </div>
+                    <div class="field input-field">
+                        <label for="">Nouveau de passe</label>
+                        <input name="new_password" type="password" placeholder="Create password" class="password">
+                    </div>
+
+                    <div class="field input-field">
+                        <label for="">Confirmation </label>
+                        <input name="confirm_password" type="password" placeholder="Confirm password" class="password">
+                    </div>
+                    <div class="field button-field">
+                        <button id="validate" name="validate">Valider</button>
+                    </div>
+                    <div class="field button-filed danger">
+                        <button id="delete" name="delete">Supprimer mon compte</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="form_content">
+                <form id="form_display">
+                    <div class="field input-field">
+                        <label for="">Nom</label>
+                        <input name="name" type="text" placeholder="Nom" class="input" readonly>
+                    </div>
+
+                    <div class="field input-field">
+                        <label for="">Prénom</label>
+                        <input name="surname" type="text" placeholder="Prénom" class="input" readonly>
+                    </div>
+
+                    <div class="field input-field">
+                        <label for="">Email</label>
+                        <input name="mail" type="email" placeholder="Email" class="input" readonly>
+                    </div>
+
+                    <div class="field input-field">
+                        <label for="">Téléphone</label>
+                        <input name="phone" type="tel" placeholder="Téléphone" class="input" readonly>
+                    </div>
+
+                    <p> Changer de Mot de passe </p>
+
+                    <div class="field input-field">
+                        <label for="">Mot de passe actuel</label>
+                        <input type="password" placeholder="Create password" class="password" readonly>
+                    </div>
+                    <div class="field input-field">
+                        <label for="">Nouveau de passe</label>
+                        <input type="password" placeholder="Create password" class="password" readonly>
+                    </div>
+
+                    <div class="field input-field">
+                        <label for="">Confirmation </label>
+                        <input type="password" placeholder="Confirm password" class="password" readonly>
+                    </div>
+
+
+                    <div class="field button-field">
+                        <button id="edit" name="edit">Modifier Info/Mot de passe</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </section>
+
+
+    <script src="script.js"></script>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>

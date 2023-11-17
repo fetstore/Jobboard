@@ -1,0 +1,31 @@
+h3{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    text-shadow:  0 0 7px #fff, 
+             0 0 10px #fff, 
+             0 0 42px rgb(230, 18, 124),   
+             0 0 77px rgb(230, 18, 124), 
+             0 0 100px rgb(230, 18, 124);
+    font-size: xx-large;
+    }
+
+.contain_companies{
+    display: flex;
+    justify-content: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 2px solid #0b0b0b;
+    padding: 8px;
+    text-align: left;
+}
+
+thead {
+    background-color: #a7d2f1;
+}
