@@ -6,6 +6,7 @@ Pour mettre en place le projet :
  - éxécuter en premier le script de création "sudo mysql < create_db.sql"
  - éxécuter le deuxième script "sudo mysql < populate_JobBoard.sql"
  - rester à la racine du projet et effectuer la commande "php -S localhost:5000"
+ - Aller sur http://localhost:5000/index.html ou http://localhost:5000
 
 ## step 01 
 
